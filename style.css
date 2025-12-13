@@ -154,7 +154,7 @@ li {
 /* Lined Paper Note Section */
 .lined-paper {
   background-color: #fff;
-  background-image: repeating-linear-gradient(transparent, transparent 19px, #ccc 20px);
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 19px, #ccc 20px);
   border: 1px solid #ccc;
   line-height: 20px;
   padding: 0 10px;
