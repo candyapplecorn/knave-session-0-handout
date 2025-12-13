@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" opacity="0.15">
+  <style>
+    .die { fill: none; stroke: #5c4033; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  </style>
+  
+  <!-- D4: Triangle -->
+  <g transform="translate(40, 40)">
+    <path class="die" d="M15,5 L25,25 L5,25 Z M15,5 L15,18 M15,18 L25,25 M15,18 L5,25" />
+  </g>
+
+  <!-- D6: Cube -->
+  <g transform="translate(120, 30)">
+    <rect class="die" x="5" y="5" width="25" height="25" rx="3" />
+    <circle cx="12" cy="12" r="2" fill="#5c4033"/>
+    <circle cx="23" cy="12" r="2" fill="#5c4033"/>
+    <circle cx="12" cy="23" r="2" fill="#5c4033"/>
+    <circle cx="23" cy="23" r="2" fill="#5c4033"/>
+  </g>
+
+  <!-- D8: Diamond -->
+  <g transform="translate(200, 40)">
+    <path class="die" d="M15,0 L30,15 L15,30 L0,15 Z M0,15 L30,15 M15,0 L15,30" />
+  </g>
+
+  <!-- D12: Pentagon -->
+  <g transform="translate(80, 120)">
+    <path class="die" d="M15,0 L29,10 L24,26 L6,26 L1,10 Z M15,13 L6,26 M15,13 L24,26 M15,13 L15,0 M15,13 L1,10 M15,13 L29,10" />
+  </g>
+
+  <!-- D20: Hexagon -->
+  <g transform="translate(180, 120)">
+    <path class="die" d="M15,0 L28,7 L28,23 L15,30 L2,23 L2,7 Z M2,7 L28,7 M2,23 L28,23 M15,0 L15,7 M15,30 L15,23 M2,7 L15,15 L28,7 M2,23 L15,15 L28,23" />
+  </g>
+
+  <!-- Repeat some for density -->
+  <g transform="translate(20, 200)">
+    <path class="die" d="M15,0 L28,7 L28,23 L15,30 L2,23 L2,7 Z M2,7 L28,7 M2,23 L28,23 M15,0 L15,7 M15,30 L15,23 M2,7 L15,15 L28,7 M2,23 L15,15 L28,23" />
+  </g>
+  <g transform="translate(120, 220)">
+    <path class="die" d="M15,5 L25,25 L5,25 Z M15,5 L15,18 M15,18 L25,25 M15,18 L5,25" />
+  </g>
+  <g transform="translate(220, 200)">
+    <rect class="die" x="5" y="5" width="25" height="25" rx="3" />
+    <circle cx="17.5" cy="17.5" r="2.5" fill="#5c4033"/>
+  </g>
+</svg>
