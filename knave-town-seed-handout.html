@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Knave — Starting Town + Region Seed (Session –1)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Parchment Filter -->
+    <svg style="display: none;">
+        <filter id="wavy2">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+    </svg>
+
+    <!-- ========================= FRONT (Columns 1–3) ========================= -->
+    <section class="page">
+        <div class="parchment-bg"></div>
+        <div class="content-layer">
+            <h1>STARTING TOWN + REGION SEED <span class="muted tiny">(each player makes ONE town; group picks the
+                    starting
+                    hub)</span></h1>
+            <p class="muted tiny">
+                Roll when stuck. Keep answers concrete. Don’t “solve” problems—create playable pressure.
+                <b>1–2 sentences per result.</b> Star ★ anything you really want in the campaign.
+            </p>
+
+            <div class="cols">
+
+                <!-- COLUMN 1 -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>1) IDENTITY & VIBE</h2>
+                        <h3>Quick prompts</h3>
+                        <ul>
+                            <li><b>Town name:</b> ________</li>
+                            <li><b>One-line pitch:</b> “A ________ town where ________.”</li>
+                            <li><b>Town symbol/sign:</b> ________</li>
+                            <li><b>What outsiders always get wrong:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Settlement Type</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Hamlet of scattered farms</td>
+                                <td><span class="n">5</span> River port / ferry town</td>
+                                <td><span class="n">9</span> Shrine town / pilgrimage stop</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Mining camp / quarry</td>
+                                <td><span class="n">6</span> Frontier fort / palisade</td>
+                                <td><span class="n">10</span> Lumber village / sawmill</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Fishing village</td>
+                                <td><span class="n">7</span> Market town on crossroads</td>
+                                <td><span class="n">11</span> Monastery-village / cloister</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Caravan stop / oasis</td>
+                                <td><span class="n">8</span> Ruins-squat / salvage town</td>
+                                <td><span class="n">12</span> Hilltop keep with houses below</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 First Impression</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Smoke on the wind</td>
+                                <td><span class="n">5</span> Bell tolling / chanting</td>
+                                <td><span class="n">9</span> Too quiet (watched)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Mud everywhere</td>
+                                <td><span class="n">6</span> Overbuilt defenses</td>
+                                <td><span class="n">10</span> Festival colors / noise</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Stench (tanneries, rot, incense)</td>
+                                <td><span class="n">7</span> Strangers treated coldly</td>
+                                <td><span class="n">11</span> Strange animals everywhere</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Windmills / creaking rigs</td>
+                                <td><span class="n">8</span> Everyone looks hungry</td>
+                                <td><span class="n">12</span> Everything too “orderly”</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Template:</b> “<u>____</u> is a <u>____</u> known for <u>____</u>.
+                            Outsiders
+                            notice <u>____</u>.”</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>2) LIFEBLOOD & NEEDS</h2>
+                        <h3>Quick prompts</h3>
+                        <ul>
+                            <li><b>Main export / work:</b> ________</li>
+                            <li><b>What they’re short on:</b> ________</li>
+                            <li><b>Who they depend on:</b> ________</li>
+                            <li><b>What they’ll pay for (high value):</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Livelihood</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Fishing / whaling</td>
+                                <td><span class="n">5</span> Mining / stone</td>
+                                <td><span class="n">9</span> Pilgrims / relic tourism</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Timber / charcoal</td>
+                                <td><span class="n">6</span> Herding / horses</td>
+                                <td><span class="n">10</span> Toll gate / bridge fees</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Farming / orchards</td>
+                                <td><span class="n">7</span> Trade / warehousing</td>
+                                <td><span class="n">11</span> Salvage from ruins</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Hunting / furs</td>
+                                <td><span class="n">8</span> Craft guild (smiths, glass, etc.)</td>
+                                <td><span class="n">12</span> “Protection” payments / merc work</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Scarcity / Need</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Food</td>
+                                <td><span class="n">5</span> Tools/iron</td>
+                                <td><span class="n">9</span> Trust (spies, paranoia)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Clean water</td>
+                                <td><span class="n">6</span> Medicine/healer</td>
+                                <td><span class="n">10</span> Guards/able bodies</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Fuel (wood/oil)</td>
+                                <td><span class="n">7</span> Safe routes</td>
+                                <td><span class="n">11</span> A “missing” tradition</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Livestock</td>
+                                <td><span class="n">8</span> Coin/credit</td>
+                                <td><span class="n">12</span> A thing to fear/blame</td>
+                            </tr>
+                        </table>
+
+                        <h3>d8 Why Here?</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> River bend / ford</td>
+                                <td><span class="n">5</span> Near ruin / old road</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Mountain pass</td>
+                                <td><span class="n">6</span> Fertile pocket / spring</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Natural harbor</td>
+                                <td><span class="n">7</span> Sacred site / omen</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Hidden valley</td>
+                                <td><span class="n">8</span> Resource deposit</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Template:</b> “They survive by <u>____</u>, but depend on
+                            <u>____</u>. Lately
+                            they lack <u>____</u> because <u>____</u>.”</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>3) PEOPLE & POWER</h2>
+                        <h3>Quick prompts</h3>
+                        <ul>
+                            <li><b>Who really runs things:</b> ________</li>
+                            <li><b>Who hates that:</b> ________</li>
+                            <li><b>What the town argues about:</b> ________</li>
+                            <li><b>A beloved local figure:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Who’s In Charge?</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Mayor reelected forever</td>
+                                <td><span class="n">5</span> Priesthood / shrine council</td>
+                                <td><span class="n">9</span> Occupying captain / garrison</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Merchant guild</td>
+                                <td><span class="n">6</span> Old family patriarch/matriarch</td>
+                                <td><span class="n">10</span> “Elected” council (rigged)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Warlord / strongman</td>
+                                <td><span class="n">7</span> Hidden cabal</td>
+                                <td><span class="n">11</span> Visiting noble (temporary)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Sheriff / judge</td>
+                                <td><span class="n">8</span> Witch / seer / miracle-worker</td>
+                                <td><span class="n">12</span> Nobody (power vacuum)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Public Tension</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Outsiders vs locals</td>
+                                <td><span class="n">5</span> Faith vs “old ways”</td>
+                                <td><span class="n">9</span> Rumors of betrayal</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Rich vs poor</td>
+                                <td><span class="n">6</span> Two families feuding</td>
+                                <td><span class="n">10</span> Missing people</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Law vs smugglers</td>
+                                <td><span class="n">7</span> Draft/tribute resentment</td>
+                                <td><span class="n">11</span> Monster panic</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Guilds vs farmers</td>
+                                <td><span class="n">8</span> New mine/road disputed</td>
+                                <td><span class="n">12</span> Curse blame game</td>
+                            </tr>
+                        </table>
+
+                        <h3>d8 Notable NPC (role)</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Innkeeper w/ ears</td>
+                                <td><span class="n">5</span> Hunter/guide</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Smith / tinker</td>
+                                <td><span class="n">6</span> Herbalist / healer</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Preacher / zealot</td>
+                                <td><span class="n">7</span> Fixer / fence</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Child who “knows things”</td>
+                                <td><span class="n">8</span> Veteran with trauma</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <div class="tiny muted"><b>Template:</b> “Power rests with <u>____</u> who wants <u>____</u>.
+                            The loudest
+                            opposition is <u>____</u>. Everyone knows <u>____</u> because <u>____</u>.”</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= BACK (Columns 4–5 + Hex Paper) ========================= -->
+    <section class="page">
+        <div class="parchment-bg"></div>
+        <div class="content-layer">
+            <h1>STARTING TOWN + REGION SEED <span class="muted tiny">(back side)</span></h1>
+
+            <div class="cols">
+
+                <!-- COLUMN 4 -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>4) PLACES & SERVICES</h2>
+                        <h3>Quick prompts</h3>
+                        <ul>
+                            <li><b>Where strangers go first:</b> ________</li>
+                            <li><b>Where locals gather:</b> ________</li>
+                            <li><b>Something you can’t get here:</b> ________</li>
+                            <li><b>A place people avoid:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Landmark</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Hanging tree / gallows</td>
+                                <td><span class="n">5</span> Ancient standing stones</td>
+                                <td><span class="n">9</span> Half-sunk tower</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Broken statue (defaced)</td>
+                                <td><span class="n">6</span> Massive bell / chime</td>
+                                <td><span class="n">10</span> Old battlefield cairns</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Hot spring / sacred well</td>
+                                <td><span class="n">7</span> Flooded quarry pit</td>
+                                <td><span class="n">11</span> Market square w/ omen mural</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Blackened chapel</td>
+                                <td><span class="n">8</span> Watchtower on the ridge</td>
+                                <td><span class="n">12</span> “Door” carved into bare rock</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 What Services Exist?</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Inn/common room</td>
+                                <td><span class="n">5</span> Smith/forge</td>
+                                <td><span class="n">9</span> Moneylender/credit</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Shrine/priest</td>
+                                <td><span class="n">6</span> Apothecary/herbalist</td>
+                                <td><span class="n">10</span> Guide/hirelings</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Stable/oxen</td>
+                                <td><span class="n">7</span> Tanner/leather</td>
+                                <td><span class="n">11</span> Scribe/sage (limited)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> General goods</td>
+                                <td><span class="n">8</span> Fence/smuggler</td>
+                                <td><span class="n">12</span> None (DIY, barter)</td>
+                            </tr>
+                        </table>
+
+                        <h3>d6 “Law” Enforcement Style</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Sheriff + a few deputies</td>
+                                <td><span class="n">4</span> Mob justice / public shame</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Temple punishment</td>
+                                <td><span class="n">5</span> Guild enforcers</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Garrison / martial rule</td>
+                                <td><span class="n">6</span> Nobody (do what you can)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Template:</b> “When you arrive, you go to <u>____</u>. For
+                            <u>____</u>, you see
+                            <u>____</u> at <u>____</u>. Locals warn you never to <u>____</u>.”</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 5 -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>5) EDGES & LEADS</h2>
+                        <p class="muted tiny">Give the town 2–3 “tomorrow-ready” leads. Nearby sites can include ruins,
+                            caves,
+                            towers, barrows, etc.</p>
+                        <h3>Quick prompts</h3>
+                        <ul>
+                            <li><b>Nearest scary place (1 day):</b> ________</li>
+                            <li><b>What it promises:</b> ________</li>
+                            <li><b>What it costs:</b> ________</li>
+                            <li><b>Two rumors (write):</b> 1) ________ 2) ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Nearby Site (within 1 day)</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Barrow mound(s)</td>
+                                <td><span class="n">5</span> Sunken temple</td>
+                                <td><span class="n">9</span> Abandoned mine</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Witch wood / cursed grove</td>
+                                <td><span class="n">6</span> Cracked watchtower</td>
+                                <td><span class="n">10</span> Cave w/ warm breath</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Ruined manor</td>
+                                <td><span class="n">7</span> Battlefield trenches</td>
+                                <td><span class="n">11</span> Stone gate / sealed arch</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Old road & collapsed bridge</td>
+                                <td><span class="n">8</span> Lake w/ something beneath</td>
+                                <td><span class="n">12</span> “Impossible” cliff door</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Local Problem (tomorrow-ready)</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> People vanish at dusk</td>
+                                <td><span class="n">5</span> Tribute demanded soon</td>
+                                <td><span class="n">9</span> Livestock slaughtered</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> The well is tainted</td>
+                                <td><span class="n">6</span> New cult recruits openly</td>
+                                <td><span class="n">10</span> Rival town sabotages trade</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Road ambushes increasing</td>
+                                <td><span class="n">7</span> Strange lights from the hills</td>
+                                <td><span class="n">11</span> A beloved NPC is accused</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Something stolen (publicly)</td>
+                                <td><span class="n">8</span> A “protective” monster deal</td>
+                                <td><span class="n">12</span> Ancient boundary crossed</td>
+                            </tr>
+                        </table>
+
+                        <h3>d8 Rumor Truthiness</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> True</td>
+                                <td><span class="n">5</span> True but wrong cause</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> False (useful anyway)</td>
+                                <td><span class="n">6</span> True but dangerous to repeat</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Half-true</td>
+                                <td><span class="n">7</span> Outdated (used to be true)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> True but incomplete</td>
+                                <td><span class="n">8</span> A trap / planted rumor</td>
+                            </tr>
+                        </table>
+
+                        <h3>d8 “If Ignored…” Town Clock</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> It spreads to a new area</td>
+                                <td><span class="n">5</span> A safe place becomes unsafe</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Innocents harmed publicly</td>
+                                <td><span class="n">6</span> Prices jump / scarcity hits</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> A leader is replaced</td>
+                                <td><span class="n">7</span> A faction gains control</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Travel becomes much riskier</td>
+                                <td><span class="n">8</span> “Point of no return” event</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Template:</b> “If nothing changes, <u>____</u> will <u>____</u> by
+                            <u>____</u>
+                            because <u>____</u>.”</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 6 (hex paper) -->
+                <div class="tab-wrapper">
+                    <div class="hex-paper" style="height: 100%;">
+                        <div class="hexlabel">HEX NOTES / REGION SKETCH</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -4,6 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
+    "start:kickoff": "vite --open /index.html",
+    "start:town": "vite --open /knave-town-seed-handout.html",
+    "start:dungeon": "vite --open /knave-dungeon-seed-handout.html",
     "build": "vite build",
     "preview": "vite preview"
   },

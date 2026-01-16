@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Knave — Dungeon Seed Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Parchment Filter -->
+    <svg style="display: none;">
+        <filter id="wavy2">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+    </svg>
+
+    <!-- ========================= FRONT (Columns 1–3) ========================= -->
+    <section class="page">
+        <div class="parchment-bg"></div>
+        <div class="content-layer">
+            <h1>DUNGEON SEED GENERATOR <span class="muted tiny">(~36 rooms; 2+ factions; classic exploration)</span>
+            </h1>
+            <p class="muted tiny">
+                Roll d20 for ideas. Link results together. <b>Empty rooms are pacing.</b> Traps signal danger. Treasure
+                equals XP.
+            </p>
+
+            <div class="cols">
+
+                <!-- COLUMN 1: ORIGIN & VIBE -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>1) ORIGIN & ATMOSPHERE</h2>
+                        <h3>Quick Prompts</h3>
+                        <ul>
+                            <li><b>Original Purpose:</b> ________</li>
+                            <li><b>Current State:</b> ________ (flooded, overgrown, burnt)</li>
+                            <li><b>Dominant Smash/Odor:</b> ________</li>
+                            <li><b>Weird Lighting:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Original Purpose</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Tomb / Crypt</td>
+                                <td><span class="n">5</span> Mine / Quarry</td>
+                                <td><span class="n">9</span> Wizard's Tower (sunken)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Temple / Shrine</td>
+                                <td><span class="n">6</span> Prison / Oubliette</td>
+                                <td><span class="n">10</span> Sewers / Cistern</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Fortress / Outpost</td>
+                                <td><span class="n">7</span> Natural Caverns</td>
+                                <td><span class="n">11</span> Laboratory / Archive</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Vault / Treasury</td>
+                                <td><span class="n">8</span> Monster Lair</td>
+                                <td><span class="n">12</span> Portal / Gatehouse</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Distinctive Vibe</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Dripping Wet / Moldy</td>
+                                <td><span class="n">5</span> Scorched / Ashy</td>
+                                <td><span class="n">9</span> Overgrown roots</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Dust-choked / Dry</td>
+                                <td><span class="n">6</span> Freezing / Icy</td>
+                                <td><span class="n">10</span> Crystal resonant humid</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Sticky / Web-filled</td>
+                                <td><span class="n">7</span> Unnatural silence</td>
+                                <td><span class="n">11</span> Mechanical hum</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Smell of Rot/Sulfur</td>
+                                <td><span class="n">8</span> Howling wind</td>
+                                <td><span class="n">12</span> Whispers / Echoes</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Concept:</b> "Originally a <u>____</u>, now claimed by <u>____</u>.
+                            The air smells of <u>____</u>."</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: STRUCTURE & LAYOUT -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>2) STRUCTURE & QUIRKS</h2>
+                        <h3>Quick Prompts</h3>
+                        <ul>
+                            <li><b>Entry Point:</b> ________ (stairs, shaft, collapse)</li>
+                            <li><b>Main Material:</b> ________</li>
+                            <li><b>Locked Doors need:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Dungeon Layout Type</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Hub & Spoke</td>
+                                <td><span class="n">5</span> Linear Gauntlet</td>
+                                <td><span class="n">9</span> Vertical Shafts</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Branching Tree</td>
+                                <td><span class="n">6</span> Grid / Geometric</td>
+                                <td><span class="n">10</span> Figure-8 Loops</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> One Huge Chamber</td>
+                                <td><span class="n">7</span> Maze / Labyrinth</td>
+                                <td><span class="n">11</span> Fractal / Repeating</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> River / Canal Network</td>
+                                <td><span class="n">8</span> Three Parallel Paths</td>
+                                <td><span class="n">12</span> Chaos / Random</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Architectural Quirk</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Chasm bisecting levels</td>
+                                <td><span class="n">5</span> Flooded lower levels</td>
+                                <td><span class="n">9</span> Moving walls/gears</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Underground river</td>
+                                <td><span class="n">6</span> Collapsed sections</td>
+                                <td><span class="n">10</span> Teleporter arches</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Bridges over nothing</td>
+                                <td><span class="n">7</span> Huge statues</td>
+                                <td><span class="n">11</span> Glass floors/walls</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Fungus forests</td>
+                                <td><span class="n">8</span> Narrow crawlspaces</td>
+                                <td><span class="n">12</span> Living walls (flesh?)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Layout:</b> "Navigating usually requires <u>____</u>. The path is
+                            blocked by <u>____</u>."</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 3: FACTIONS & ECOLOGY -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>3) FACTIONS & DENIZENS</h2>
+                        <p class="muted tiny">Two groups fighting over the dungeon creates instant drama.</p>
+                        <h3>Quick Prompts</h3>
+                        <ul>
+                            <li><b>Faction A:</b> ________ (controls entrance)</li>
+                            <li><b>Faction B:</b> ________ (controls deeps)</li>
+                            <li><b>Conflict Source:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Faction Type</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Goblin / Kobold Tribe</td>
+                                <td><span class="n">5</span> Cultists</td>
+                                <td><span class="n">9</span> Construct / Golems</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Undead Horde</td>
+                                <td><span class="n">6</span> Bandit Gang</td>
+                                <td><span class="n">10</span> Fungi / Oozes</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Orc / Hobgoblin Warband</td>
+                                <td><span class="n">7</span> Rival Adventurers</td>
+                                <td><span class="n">11</span> Fae / Sprites</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Beast Pack (Wolves/Rats)</td>
+                                <td><span class="n">8</span> Mad Wizard + Minions</td>
+                                <td><span class="n">12</span> Demon / Devil Cult</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d8 Wandering Monster Vibe</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Starving scavenger</td>
+                                <td><span class="n">5</span> Hunting party</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Lost patrol</td>
+                                <td><span class="n">6</span> Escaped prisoner</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Ooze cleaning crew</td>
+                                <td><span class="n">7</span> Ghostly remnant</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Vermin swarm</td>
+                                <td><span class="n">8</span> Apex predator</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Ecology:</b> "Faction A wants <u>____</u> but Faction B holds
+                            <u>____</u>."</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= BACK (Columns 4–5 + Graph Paper) ========================= -->
+    <section class="page">
+        <div class="parchment-bg"></div>
+        <div class="content-layer">
+            <h1>DUNGEON SEED GENERATOR <span class="muted tiny">(back side)</span></h1>
+
+            <div class="cols">
+
+                <!-- COLUMN 4: HAZARDS & TRICKS -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>4) HAZARDS & TRICKS</h2>
+                        <p class="muted tiny">Telegraph traps! Click, snap, loose stone. Damage is boring; consequences
+                            are fun.</p>
+                        <h3>Quick Prompts</h3>
+                        <ul>
+                            <li><b>Common Trap Trigger:</b> ________ (tripwire, plate)</li>
+                            <li><b>Puzzle Reward:</b> ________ (shortcut, loot)</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Trap Concept</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Pit (Spiked/Water/Slime)</td>
+                                <td><span class="n">5</span> Falling Block/Net</td>
+                                <td><span class="n">9</span> Alarm (Summons Monster)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Poison Dart/Gas</td>
+                                <td><span class="n">6</span> Scything Blade</td>
+                                <td><span class="n">10</span> Teleport / Separation</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Rolling Boulder</td>
+                                <td><span class="n">7</span> Room fills w/ Sand/Water</td>
+                                <td><span class="n">11</span> Curse (Stat drain)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Crushing Walls</td>
+                                <td><span class="n">8</span> Magical Rune (Explodes)</td>
+                                <td><span class="n">12</span> Illusion floor</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Trick / Puzzle Object</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Talking Statue</td>
+                                <td><span class="n">5</span> Mirror of Opposition</td>
+                                <td><span class="n">9</span> Weighing Scales</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Chessboard Floor</td>
+                                <td><span class="n">6</span> Altar demanding blood</td>
+                                <td><span class="n">10</span> Musical instrument</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Lever Array (colored)</td>
+                                <td><span class="n">7</span> Pool of liquid light</td>
+                                <td><span class="n">11</span> Portrait with eyes</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Logic Door (riddle)</td>
+                                <td><span class="n">8</span> Clockwork mechanism</td>
+                                <td><span class="n">12</span> Star chart</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Danger:</b> "Watch out for <u>____</u> near the <u>____</u>."</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 5: TREASURE & BOSS -->
+                <div class="tab-wrapper">
+                    <div class="panel">
+                        <h2>5) TREASURE & BOSS</h2>
+                        <h3>Quick Prompts</h3>
+                        <ul>
+                            <li><b>The Big Boss:</b> ________</li>
+                            <li><b>Why they're here:</b> ________</li>
+                            <li><b>The Legendary Item:</b> ________</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Boss Type</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Ancient Undead Lord</td>
+                                <td><span class="n">5</span> Corrupt Noble/Knight</td>
+                                <td><span class="n">9</span> Hive Mind Queen</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Dragon (Young/Old)</td>
+                                <td><span class="n">6</span> Demon/Devil Summoner</td>
+                                <td><span class="n">10</span> Giant Specimen</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Beholder / Eye Tyrant</td>
+                                <td><span class="n">7</span> Chimera / Hydra</td>
+                                <td><span class="n">11</span> Mad Alchemist</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Chimera / Monstrosity</td>
+                                <td><span class="n">8</span> Medusa / Basilisk</td>
+                                <td><span class="n">12</span> A.I. / Construct</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d12 Treasure Type</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> Gold / Gems (Bulk)</td>
+                                <td><span class="n">5</span> Magical Weapon</td>
+                                <td><span class="n">9</span> Spellbook / Scrolls</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> Art Objects / Jewelry</td>
+                                <td><span class="n">6</span> Magical Armor/Shield</td>
+                                <td><span class="n">10</span> Potion Stash</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Ancient Relic (fragile)</td>
+                                <td><span class="n">7</span> Wands / Staves</td>
+                                <td><span class="n">11</span> Deed / Title</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Information / Secrets</td>
+                                <td><span class="n">8</span> Wondrous Item (Ring/Cloak)</td>
+                                <td><span class="n">12</span> Key to elsewhere</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="panel">
+                        <h3>d8 The Twist</h3>
+                        <table class="grid">
+                            <tr>
+                                <td><span class="n">1</span> The Boss is dead already</td>
+                                <td><span class="n">5</span> Treasure is cursed</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">2</span> The Boss is a prisoner</td>
+                                <td><span class="n">6</span> It's a testing ground</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">3</span> Factions unite vs PCs</td>
+                                <td><span class="n">7</span> Dungeon is waking up</td>
+                            </tr>
+                            <tr>
+                                <td><span class="n">4</span> Another party got here first</td>
+                                <td><span class="n">8</span> Time loop</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Hex Note Section -->
+                    <div class="hex-paper">
+                        <span class="tiny muted"><b>Reward:</b> "The <u>____</u> is hidden in the <u>____</u>, guarded
+                            by <u>____</u>."</span>
+                    </div>
+                </div>
+
+                <!-- COLUMN 6: GRAPH PAPER MAP -->
+                <div class="tab-wrapper">
+                    <div class="graph-paper" style="height: 100%;">
+                        <div class="hexlabel">DUNGEON MAP (1 sq = 10ft)</div>
+                        <!-- Graph paper background provided by CSS .graph-paper -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

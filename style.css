@@ -198,6 +198,44 @@ li {
   min-height: 50px;
 }
 
+.hexlabel {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-weight: bold;
+  font-size: 7.2pt;
+  font-family: var(--font-main);
+  z-index: 5;
+}
+
+/* Graph Paper Note Section */
+.graph-paper {
+  background-color: #fff;
+  /* Square Grid 20px */
+  background-image:
+    linear-gradient(#ccc 1px, transparent 1px),
+    linear-gradient(90deg, #ccc 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  /* Align grid */
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #555;
+  font-size: 9pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  flex-grow: 1;
+  height: auto !important;
+  min-height: 50px;
+}
+
 /* Wrapper to keep Tab + Note together - Flex Column for dynamic height */
 .tab-wrapper {
   display: flex;
